@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('install dependency') {
+      steps {
+        sh 'npm install -g'
+      }
+    }
+
   }
 }
