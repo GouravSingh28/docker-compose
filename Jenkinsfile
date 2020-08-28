@@ -6,7 +6,7 @@ pipeline {
         jdk 'java-9'
       }
       steps {
-        sh 'jdk -version'
+        sh 'java -version'
       }
     }
 
