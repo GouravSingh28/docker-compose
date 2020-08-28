@@ -3,12 +3,13 @@ pipeline {
 
     stages {
         stage('Build') {
-   
+   tools {
+          nodejs 'nodejs-14'
+        
+        }
               steps {
-                
-			 nodejs('nodejs-14') {
-             sh 'node -v'
-}
+                sh 'npm --version'
+				
             }
         }
     }
