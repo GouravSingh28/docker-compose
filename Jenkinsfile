@@ -1,7 +1,6 @@
 pipeline {
   agent any
-
-  tools {nodejs "nodejs-14"}
+    tool name: 'nodejs-14', type: 'nodejs'
 
   stages {    
     
