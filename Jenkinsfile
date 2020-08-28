@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
    tools {
-          nodejs 'nodejs-14'
+          nodejs 'nodejs13'
         //maven 'maven3_0_5'
         }
               steps {
