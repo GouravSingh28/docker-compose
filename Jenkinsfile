@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('compile') {
-      steps {
-        echo 'chutiyapa'
+      parallel {
+        stage('compile') {
+          steps {
+            echo 'chutiyapa'
+          }
+        }
+
+        stage('compile2') {
+          steps {
+            echo 'bihuhahhaha'
+          }
+        }
+
       }
     }
 
