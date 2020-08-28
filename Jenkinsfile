@@ -1,17 +1,15 @@
 pipeline {
-  agent any
-    
+    agent any
 
-  stages {    
-    
-            
-    stage('Install dependencies') {
-      steps {
-	    tool name: 'nodejs-14', type: 'nodejs'
-        sh 'npm --version'
-		
-      }
-    }     
-               
-  }
+    stages {
+        stage('Build') {
+   tools {
+          nodejs 'nodejs-14'
+        //maven 'maven3_0_5'
+        }
+              steps {
+                sh 'npm --version'
+            }
+        }
+    }
 }
