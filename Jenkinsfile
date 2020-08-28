@@ -7,7 +7,7 @@ pipeline {
               steps {
                 
 			 nodejs('nodejs-14') {
-             sh 'npm --version'
+             sh 'node -v'
 }
             }
         }
