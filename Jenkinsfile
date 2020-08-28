@@ -6,15 +6,10 @@ pipeline {
         nodejs 'nodejs-14'
       }
       steps {
-        sh 'npm --version'
-      }
-    }
-
-    stage('compile') {
-      steps {
         sh 'npm install -g'
       }
     }
+
 
   }
 }
