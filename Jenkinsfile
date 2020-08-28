@@ -3,10 +3,10 @@ pipeline {
   stages {
     stage('Build') {
       tools {
-        nodejs 'nodejs-14'
+        java 'java-9'
       }
       steps {
-        sh 'npm install -g'
+        sh 'java --version'
       }
     }
 
