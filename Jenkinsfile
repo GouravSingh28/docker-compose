@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       tools {
-        java 'java-9'
+        jdk 'java-9'
       }
       steps {
         sh 'java --version'
