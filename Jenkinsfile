@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       tools {
-        jdk 'java-9'
+        mvn 'maven-3.6.3'
       }
       steps {
         sh 'mvn -version'
